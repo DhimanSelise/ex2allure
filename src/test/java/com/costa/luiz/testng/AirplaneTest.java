@@ -34,9 +34,9 @@ public class AirplaneTest {
 
 
     @Severity(SeverityLevel.BLOCKER)
-    @Feature("Safety")
+    @Feature("Login on IPEX")
     @Test(priority = 1)
-    public void brakes() {
+    public void Login() {
         //Dummy code
     	System.out.println("testing now...");
 		ComponentHandler.Init(); 

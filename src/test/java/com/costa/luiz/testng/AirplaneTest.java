@@ -38,6 +38,12 @@ public class AirplaneTest {
     @Test(priority = 1)
     public void brakes() {
         //Dummy code
+    	System.out.println("testing now...");
+		ComponentHandler.Init(); 
+		ComponentHandler.NavigateToURL("http://pcx.seliselocal.com/");
+		System.out.println("Site Visited");
+		new LoginModule().getLogin("kawsar.ahmed@selise.ch", "en", "1qazZAQ!");
+	    System.out.println("Login Worked");
         boolean condition = true;
         Assert.assertTrue(condition);
     }
@@ -47,12 +53,7 @@ public class AirplaneTest {
     @Test(priority = 2, enabled = true)
     public void entertainmentSystem() {
         //Dummy code
-    	System.out.println("testing now...");
-		ComponentHandler.Init(); 
-		ComponentHandler.NavigateToURL("http://pcx.seliselocal.com/");
-		System.out.println("Site Visited");
-		new LoginModule().getLogin("kawsar.ahmed@selise.ch", "en", "1qazZAQ!");
-	    System.out.println("Login Worked");
+    	System.out.println("EnterTainment");
     }
     
     

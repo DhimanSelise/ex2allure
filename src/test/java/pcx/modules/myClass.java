@@ -14,6 +14,12 @@ public class myClass {
 		
 	}
 	
+	public static void CreateCase() {
+		Visit(); 
+		login(); 
+		CreateAndEditCase();
+	}
+	
 	public static void Visit() {
 		System.out.println("testing now..."); 
 		ComponentHandler.Init(); 

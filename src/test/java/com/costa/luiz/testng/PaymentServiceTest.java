@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 import static java.util.Objects.nonNull;
 
-@Feature("Payment")
+@Feature("Users Module")
 public class PaymentServiceTest {
 
     @Feature("Issuing Bank")

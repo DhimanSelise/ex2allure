@@ -5,7 +5,7 @@ import io.qameta.allure.Feature;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-@Feature("Imperial to Metric")
+@Feature("Assign Inspector")
 public class SpaceShipTest {
 
     @Test(description = "Check the measure to be metric")

@@ -3,9 +3,13 @@ package com.costa.luiz.testng;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
+import pcx.modules.LoginModule;
+
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
+import core.components.ComponentHandler;
 
 import static java.util.Objects.nonNull;
 
@@ -40,11 +44,17 @@ public class AirplaneTest {
 
     @Feature("Entertainment")
     @Severity(SeverityLevel.MINOR)
-    @Test(priority = 2, enabled = false)
+    @Test(priority = 2, enabled = true)
     public void entertainmentSystem() {
         //Dummy code
-        int coverage = 100;
-        Assert.assertEquals(coverage, coverage);
+    	System.out.println("testing now...");
+		ComponentHandler.Init(); 
+		ComponentHandler.NavigateToURL("http://pcx.seliselocal.com/");
+		System.out.println("Site Visited");
+		new LoginModule().getLogin("kawsar.ahmed@selise.ch", "en", "1qazZAQ!");
+	    System.out.println("Login Worked");
     }
+    
+    
 
 }

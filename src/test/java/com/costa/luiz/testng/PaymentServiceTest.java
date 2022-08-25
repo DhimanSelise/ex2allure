@@ -1,6 +1,8 @@
 package com.costa.luiz.testng;
 
 import io.qameta.allure.Feature;
+import pcx.modules.myClass;
+
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Optional;
@@ -9,15 +11,14 @@ import org.testng.annotations.Test;
 
 import static java.util.Objects.nonNull;
 
-@Feature("Users Module")
+@Feature("Smoke Test")
 public class PaymentServiceTest {
 
-    @Feature("Issuing Bank")
+    @Feature("Create A Case then Edit")
     @Test(groups = {"sendTxn"})
-    void validateCard() {
-        // Dummy test
-        String serviceResponse = "OK";
-        Assert.assertEquals(serviceResponse, "OK");
+    void CreateThenEditCase() {
+    	System.out.println("$_ Running Create A Case then Edit");
+    	new myClass().CreateCase();
     }
 
     @Feature("Issuing Bank")

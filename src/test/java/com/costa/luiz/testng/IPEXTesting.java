@@ -29,6 +29,7 @@ public class IPEXTesting {
 	@Test()
 	void CreateCase() {
 		// Dummy test
+		System.out.println("$_ Running on IPEX test automation");
 		new myClass().CreateCase();
 	}
 
